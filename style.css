@@ -1,0 +1,1034 @@
+/* Default */
+* {
+   text-decoration: none;
+   padding: 0;
+   margin: 0;
+}
+body {
+   font-family: arial, "Times New Roman";
+}
+
+/* Positions the whole main from top */
+main {
+   /* padding-top: 100px; */
+}
+
+/* The whole header */
+header {
+   /*position: fixed; /* to keep header stay in view */
+   top: 0; /* keep top left and right position the same */
+   right: 0;
+   left: 0;
+   background-color: #fff;
+   width: 100%;
+   height: 100px;
+}
+
+/* The logo name */
+header .header-brand {
+   font-family: arial, "Times New Roman";
+   font-size: 24px;
+   font-weight: 900;
+   color: #111;
+   text-transform: uppercase;
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   padding: 20px 0;
+}
+
+/* The whole link navigation */
+header nav ul {
+   display: table; /* used table instead of block to center in responsive */
+   margin: 0 auto;
+   width: fit-content;
+}
+
+/* The individual link blocks */
+header nav ul li {
+   display: inline-block; /* side by side */
+   float: left; /* connected to the left */
+   list-style: none; /* no bulleted points */
+   padding: 0 16px; /* padding between links */
+}
+
+/* The anchor links */
+header nav ul li a{
+   font-family: arial, "Times New Roman";
+   font-size: 16px;
+   color: #111;
+   text-transform: uppercase;
+}
+
+/* Header login text */
+header .header-login {
+   display: none;
+}
+
+/* Header login form */
+header nav form input[type=text], input[type=password] {
+   /*display: none;*/
+}
+
+/* Header login button */
+header nav form button {
+   display: none;
+}
+
+/* Desktop header */
+@media only screen and (min-width: 1300px) {
+   /* Desktop logo name */
+   header .header-brand {
+      margin: 31px 0; /* 100px-38px= 62px/2= 31px */
+      text-align: left;
+      padding: 0 20px 0 40px; /* logo position */
+      float: left; /* float border to left */
+      line-height: 38px; /* border height or size vertically */
+      border-right: 3px solid #111; /* Border for logo and menu */
+   }
+
+   /* Desktop whole link navigation */
+   header nav ul {
+      margin: 20px 0 20px 20px;
+      float: left;
+   }
+
+   /* Desktop header anchor links */
+   header nav ul li a{
+      line-height: 60px; /* length or size of the link vertically, not the position */
+   }
+
+   /* Desktop header login */
+   header .header-login {
+      display: block;
+      font-family: arial, "Times New Roman";
+      font-size: 13px;
+      color: #111;
+      line-height: 40px;
+      float: right;
+      margin-right: 20px;
+      margin-top: 30px;
+      padding: 0 20px;
+   }
+
+   /* Desktop header login form */
+   header nav form input[type=text], input[type=password] {
+      display: block;
+      width: 150px;
+      padding: 6px 8px;
+      margin: 0 10px 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 3px;
+   }
+
+   /* Header login button */
+   header nav form button {
+      display: inline-block;
+      background-color: #111;
+      color: white;
+      padding: 6px 0px;
+      margin: 0 10px 5px 0px;
+      border: none;
+      cursor: pointer;
+      width: 70px;
+      border-radius: 3px;
+   }
+
+   /* Add a hover effect for buttons */
+   header nav form button:hover {
+       opacity: 0.8;
+   }
+
+   header nav form .header-signup {
+      font-family: arial, "Times New Roman";
+      font-size: 13px;
+      color: #111;
+   }
+
+   header nav .login-status {
+      display: inline-block;
+      margin-top: 0px;
+   }
+
+   header nav .login-status p {
+      display: inline-block;
+   }
+
+   header nav .login-status button {
+      margin-left: 20px;
+   }
+
+}
+
+/*** MAIN ***/
+
+/* Banner image */
+.index-banner {
+   width: 100%;
+   height: calc(100vh - 100px);
+   background-image: url('gallery/banner.jpg');
+   background-color: #f2f2f2;
+   background-repeat: no-repeat;
+   background-position: 0 -50px;
+   background-size: cover;
+   display: table;
+}
+
+.vertical-center {
+   display: table-cell;
+   vertical-align: middle;
+}
+
+/* Banner texts */
+.index-banner h2 {
+   font-family: arial, "Times New Roman";
+   font-size: 60px;
+   font-weight: 900;
+   line-height: 80px;
+   color: #fff;
+   text-align: center;
+   text-shadow: 2px 2px 8px #111;
+}
+
+/* Banner texts */
+.index-banner h1 {
+   font-family: "Times New Roman";
+   font-size: 28px;
+   font-weight: 100;
+   font-style: italic;
+   line-height: 40px;
+   color: #fff;
+   text-align: center;
+   text-shadow: 2px 2px 8px #111;
+}
+
+/* Box links */
+.index-links div {
+   margin: 16px 16px 0;
+   width: calc(100% - 32px); /* 10px left + 10px right of the box */
+   height: 100px;
+   background-color: #f2f2f2;
+}
+
+/* Box texts */
+.index-links div h3 {
+   font-family: arial;
+   font-size: 28px;
+   font-weight: 600;
+   color: #111;
+   text-align: center;
+   text-transform: uppercase;
+   line-height: 100px;
+}
+
+/* Section center */
+.section-default .header-signup {
+   font-size: 16px;
+}
+
+.section-default {
+   width: 40%;
+   margin: 50px auto 0px;
+   color: #111;
+   font-family: arial, "Times New Roman";
+}
+
+.section-default h2 {
+   text-align: center;
+}
+
+.section-default ol {
+   margin: 50px 0;
+   padding: 0 0 5px 0;
+}
+
+.section-default li {
+   padding: 0 0 10px 0;
+}
+
+/* Section admin */
+.section-admin-left .header-signup {
+   font-size: 16px;
+}
+
+.section-admin-left {
+   width: 40%;
+   margin: 10px auto 0px;
+   color: #111;
+   font-family: arial, "Times New Roman";
+   display: block;
+   float: left;
+}
+
+.section-admin-left img {
+   margin: 30px auto 30px;
+   display: block;
+   width: 90%;
+   height: auto;
+}
+
+.section-admin-left h3 {
+   margin-top: 30px;
+
+   padding-left: 70px;
+   text-align: left;
+}
+
+.section-admin-left p {
+   margin: 30px 30px;
+}
+
+.section-admin-left ol {
+   margin: 10px 0;
+   padding: 0 0 5px 0;
+}
+
+.section-admin-left li {
+   padding: 0 0 10px 0;
+
+   padding-left: 70px;
+}
+
+.section-admin-right .header-signup {
+   font-size: 16px;
+}
+
+.section-admin-right {
+   width: 60%;
+   margin: 40px auto 0px;
+   color: #111;
+   font-family: arial, "Times New Roman";
+   display: block;
+   float: right;
+}
+
+.section-admin-right h2, h3 {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.section-admin-right .message {
+   border-style: solid;
+   margin-bottom: 5px;
+   padding-top: 10px;
+}
+
+.section-admin-right p {
+   padding: 0px 70px;
+   margin-bottom: 10px;
+}
+
+.section-admin-right ol {
+   margin: 50px 0;
+   padding: 0 0 5px 0;
+}
+
+.section-admin-right li {
+   padding: 0 0 10px 0;
+}
+
+
+/* Section left */
+.section-left .header-signup {
+   font-size: 16px;
+}
+
+.section-left {
+   width: 50%;
+   margin: 10px auto 0px;
+   color: #111;
+   font-family: arial, "Times New Roman";
+   display: block;
+   float: left;
+}
+
+.section-left img {
+   margin: 30px auto 30px;
+   display: block;
+   width: 90%;
+   height: auto;
+}
+
+.section-left h2, h3 {
+   text-align: center;
+}
+
+.section-left p {
+   margin: 30px 30px;
+}
+
+.section-left ol {
+   margin: 50px 0;
+   padding: 0 0 5px 0;
+}
+
+.section-left li {
+   padding: 0 0 10px 0;
+}
+
+/* Section right */
+.section-right .header-signup {
+   font-size: 16px;
+}
+
+.section-right {
+   width: 50%;
+   margin: 40px auto 0px;
+   color: #111;
+   font-family: arial, "Times New Roman";
+   display: block;
+   float: right;
+}
+
+.section-right h2, h3 {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+
+
+.section-right ol {
+   margin: 50px 0;
+   padding: 0 0 5px 0;
+}
+
+.section-right li {
+   padding: 0 0 10px 0;
+}
+
+
+.form-signup, .form-signin {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+}
+
+.input-group {
+	margin: 15px 0px 15px 0px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+   font-family: arial, "Times New Roman";
+}
+
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 0px 0px 0px 5px;
+	font-size: 14px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.btn {
+	padding: 8px 20px;
+	font-size: 14px;
+	color: #fff;
+	background: #111;
+	border: none;
+	border-radius: 5px;
+}
+
+.contact-form {
+   width: 90%;
+   margin: 0px auto;
+}
+
+.contact-form input {
+   display: block;
+   width: 100%;
+   height: 30px;
+   margin: 13px 0 13px 0;
+   padding: 5px 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+   display: block;
+   width: 100%;
+   height: 120px;
+   margin: 13px 0 13px 0;
+   padding: 5px 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.contact-form .btn {
+   float: right;
+}
+
+.enquiry-form {
+   width: 90%;
+   margin: 0px auto;
+}
+
+.section-right .enquiry-form ul li {
+   list-style: none;
+   margin-bottom: 5px;
+   padding: 0 0 5px 0;
+}
+
+.enquiry-form input {
+   display: block;
+   width: 100%;
+   height: 30px;
+   margin: 13px 0 13px 0;
+   padding: 5px 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.enquiry-form textarea {
+   display: block;
+   width: 100%;
+   height: 120px;
+   margin: 13px 0 13px 0;
+   padding: 5px 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.enquiry-form .btn {
+   float: right;
+}
+
+.message .btn {
+   margin: 10px 0 10px 70px;
+}
+
+.browse {
+   width: 100%;
+   margin: 50px auto;
+}
+
+.browse p {
+   margin: 5px 0 20px 0;
+}
+
+.browse form {
+   display: inline-block;
+}
+
+.browse form input[type=submit] {
+   padding: 8px 20px;
+   font-size: 14px;
+   color: #fff;
+   background: #111;
+   border: none;
+   border-radius: 5px;
+}
+
+/* Desktop main */
+@media only screen and (min-width: 1000px) {
+   /* Wrapper for box links 1000px */
+   .wrapper {
+      width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      overflow: hidden;
+   }
+
+   /* Desktop banner */
+   .index-banner {
+      /* height: 800px;  reduce the height of the banner in desktop */
+      height: 450px;
+   }
+
+   /* Desktop H1 banner text */
+   .index-banner h1 {
+      display: block;
+      width: 560px; /* width to be smaller so that it wraps */
+      margin: 0 auto; /* center the text */
+   }
+
+   /* All desktop box links margin and height */
+   .index-links div {
+      margin: 20px 10px 0;
+      height: 230px;
+      float: left;
+      border-radius: 7px; /* rounded corners */
+   }
+
+   /* Square desktop box links */
+   .index-boxlink-square {
+      width: calc(25% - 20px) !important; /* to override */
+      transition: all 0.6s ease;
+      background-size: cover;
+   }
+
+   #city-tours {
+      background-image: url('gallery/jame.jpg');
+   }
+
+   #temburong {
+      background-image: url('gallery/temburong.jpeg');
+   }
+
+   #promo {
+      background-image: url('gallery/promo.jpg');
+      background-position: -40px 0;
+      background-repeat: no-repeat;
+   }
+
+   #brunei-beyond {
+      background-image: url('gallery/brunei-beyond.jpg');
+   }
+
+   #hotels {
+      background-image: url('gallery/hotels.jpg');
+   }
+
+   #dining {
+      background-image: url('gallery/dining.jpg');
+      background-position: -55px 0;
+      background-repeat: no-repeat;
+   }
+
+   #water-village {
+      background-image: url('gallery/water-village.jpg');
+   }
+
+   #city {
+      background-image: url('gallery/city.jpg');
+   }
+
+   #mangrove {
+      background-image: url('gallery/mangrove.jpg');
+   }
+
+   #night {
+      background-image: url('gallery/night.jpg');
+   }
+
+   #seria {
+      background-image: url('gallery/seria.jpg');
+      background-position: -65px 0;
+      background-repeat: no-repeat;
+   }
+
+   #adventure {
+      background-image: url('gallery/temburong4.jpg');
+   }
+
+   #experience {
+      background-image: url('gallery/temburong5.jpg');
+   }
+
+   #highlights {
+      background-image: url('gallery/temburong6.jpg');
+   }
+
+   #car {
+      background-image: url('gallery/car.jpg');
+      background-position: -50px 0;
+      background-repeat: no-repeat;
+   }
+
+   #golf {
+      background-image: url('gallery/golf.jpg');
+      background-position: -30px 0;
+      background-repeat: no-repeat;
+   }
+
+   #bike {
+      background-image: url('gallery/bike.png');
+      background-position: -110px 0;
+      background-repeat: no-repeat;
+   }
+
+   #empire {
+      background-image: url('gallery/empire.jpg');
+   }
+
+   #radisson {
+      background-image: url('gallery/radisson.jpg');
+   }
+
+   #rizqun {
+      background-image: url('gallery/rizqun.jpg');
+   }
+
+   #centrepoint {
+      background-image: url('gallery/centrepoint.jpg');
+   }
+
+   .index-boxlink-square:hover {
+      transform: scale(1.05);
+   }
+
+   /* Rectangle box link */
+   .index-boxlink-rectangle {
+      width: calc(50% - 20px) !important; /* to override */
+      background-image: url('');
+      background-size: cover;
+      transition: all 0.6s ease;
+   }
+
+   /* Rectangle box link hover */
+   .index-boxlink-rectangle:hover {
+      transform: scale(1.05);
+   }
+
+   .index-boxlink-square h3 {
+      padding-top: 70px;
+      color: #fff !important;;
+      text-align: center;
+      text-shadow: 2px 2px 8px #111;
+   }
+
+   /* Rectangle box link text */
+   .index-boxlink-rectangle h3 {
+      /*color: #fff !important;*/
+      /*text-shadow: 2px 2px 8px #000;*/
+      /*line-height: 230px;*/
+      padding-top: 70px;
+      color: #fff !important;;
+      text-align: center;
+      text-shadow: 2px 2px 8px #111;
+   }
+
+
+/* CASES PAGE */
+
+.cases-links h3 {
+   font-family: arial;
+   font-size: 28px;
+   font-weight: 600;
+   color: #111;
+   margin: 10px 0 0 10px;
+   text-transform: uppercase;
+}
+
+.cases-links .wrapper div {
+   width: 230px; /* 1000px-(4*2*10px)=920/4=230px each box */
+   height: 230px;
+   margin: 20px 10px 0px;
+   background-color: #e3e3e3;
+   float: left;
+   border-radius: 7px;
+}
+
+.cases-links .wrapper p {
+   padding-top: 40%; /* centering text. instead of positioning the text to the center, we could add padding to the top. also, when we change the size of the box, the text will always be centered. */
+   font-family: arial;
+   font-size: 24px;
+   font-weight: 600;
+   color: #111;
+   margin: 10px 0 0 10px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+/* VIDEO AND ARTICLE */
+
+.case-vid h2 {
+   font-family: arial;
+   font-size: 28px;
+   font-weight: 600;
+   color: #111;
+   margin: 10px 0 0 10px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.case-vid video {
+   display: block;
+   width: 720px;
+   margin: 0 auto;
+   padding: 30px 0;
+}
+
+.case-vid article h3 {
+   font-family: arial;
+   font-size: 28px;
+   font-weight: 600;
+   color: #111;
+   margin: 10px 0 0 10px;
+   padding-bottom: 10px;
+   text-transform: uppercase;
+}
+
+.case-vid article p {
+   font-family: arial;
+   font-size: 16px;
+   line-height: 24px;
+   color: #111;
+   margin: 10px 0 0 10px;
+   column-count: 3; /* column */
+   column-gap: 30px;
+}
+
+/*FOOTER*/
+
+footer {
+   width: calc(100% - 80px); /* the section used for the links */
+   padding: 40px 40px;
+   margin-top: 20px;
+   background-color: #333;
+   overflow: hidden; /*  */
+}
+
+footer ul {
+   width: fit-content; /* fit the section */
+   float: left;
+   padding-left: 30px;
+}
+
+footer ul li {
+   display: block;
+   list-style: none;
+}
+
+footer ul li a {
+   font-family: arial, "Times New Roman";
+   font-size: 16px;
+   color: #fff;
+   line-height: 34px;
+   text-transform: uppercase;
+}
+
+.footer-links-cases {
+   display: none;
+}
+
+.footer-sm {
+   width: 40px;
+   float: right;
+}
+
+.footer-sm img {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+/* Desktop footer */
+@media only screen and (min-width: 1000px) {
+   .footer-links-cases {
+      display: block;
+      float: right;
+   }
+
+   footer ul {
+      padding-right: 30px;
+   }
+
+   footer ul li p {
+      font-family: arial, "Times New Roman";
+      font-size: 16px;
+      color: #fff;
+      line-height: 34px;
+      text-transform: uppercase;
+   }
+}
+
+
+/*** Photo Dashboard ***/
+/* Section dashboard*/
+.section-dashboard .header-signup {
+   font-size: 16px;
+}
+
+.section-dashboard {
+   width: 90%;
+   margin: 50px auto 0px;
+   color: #111;
+   font-family: arial, "Times New Roman";
+}
+
+.section-dashboard h2 {
+   text-align: center;
+}
+
+.section-dashboard ol {
+   margin: 50px 0;
+   padding: 0 0 5px 0;
+}
+
+.section-dashboard li {
+   padding: 0 0 10px 0;
+}
+.clearfix:before, .clearfix:after{
+   content: "";
+   display: table;
+}
+.clearfix:after{
+   clear: both;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px;
+  background: white;
+}
+img, span{
+  height:100px;
+  width:150px;
+  margin-left: 10px;
+  text-align: center;
+}
+img, .imgName{
+  text-align: center;
+}
+.flex-container2 {
+	display: flex;
+	width: 90%;
+	margin: 0px auto;
+   background-color: #5F9EA0;
+   border: 1px solid #B0C4DE;
+	border-radius: 0px 0px 10px 10px;
+   color: white;
+	padding: 20px;
+}
+.flex-container2 .button a{
+   border: none;
+   color: white;
+   padding: 5px 5px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+.myPhoto{
+  width:100% !important;
+  height:90% !important;
+}
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
